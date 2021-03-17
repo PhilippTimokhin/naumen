@@ -1,0 +1,497 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+// === breakpoints === //
+
+// === breakpoints === //
+
+// === variables === //
+
+$font-family-primary: 'IBM Plex Mono', monospace;
+$font-size-primary: 16px;
+$font-size-secondary: 18px;
+$font-color-primary: rgb(255, 255, 255);
+
+$bg-primary: #000;
+$bg-secondary: #fff;
+$color-hover: rgb(0, 255, 55);
+
+$title-fz: 36px;
+$subtitle-fz: 20px;
+
+// === variables === //
+
+// TODO: here have to use a pattern ... for ex. 7-1
+
+// === header === //
+
+.header--wrapper {
+  height: 100px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: $bg-primary;
+}
+
+.logo {
+  &__link {
+    text-decoration: none;
+    font-size: $font-size-secondary;
+    color: $font-color-primary;
+    font-family: $font-family-primary;
+    letter-spacing: 4px;
+  }
+}
+
+.navbar {
+  &__list {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  &__link {
+    font-family: $font-family-primary;
+    text-decoration: none;
+    font-size: $font-size-primary;
+    color: $font-color-primary;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    &:hover {
+      color: $color-hover;
+      border-bottom: 1px solid $color-hover;
+    }
+  }
+}
+
+// === header === //
+
+//  ===footer === //
+
+.footer--wrapper {
+  background-color: $bg-primary;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  .footer__logo {
+    display: flex;
+    flex-direction: column;
+  }
+  &__image {
+    display: block;
+    height: 30px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+}
+.menu {
+&__list {
+  display: inline-block;
+  margin-right: 15px;
+}
+&__link {
+  color: $font-color-primary;
+  text-decoration: none;
+  transition: all 0.3s ease;
+    &:hover {
+      color: $color-hover;
+      border-bottom: 1px solid $color-hover;
+    }
+}
+}
+
+.footer__copy {
+  .copy__text {
+    text-align: center;
+    color: $font-color-primary;
+    font-family: $font-family-primary;
+    letter-spacing: 1px;
+  }
+}
+
+//  ===footer === //
+
+// === main === //
+
+// === promo styles === //
+
+.promo--wrapper {
+  height: 90vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .promo__icon {
+    .icon__image {
+      height: 60px;
+    }
+  }
+  .promo__title {
+    margin-top: 15px;
+    .title__text {
+    color: $font-color-primary;
+    font-size: $title-fz;
+    letter-spacing: 10px;
+    font-weight: 100;
+  }
+  }
+
+  .promo__subtitle {
+    margin-top: 40px;
+    .subtitle__text {
+      color: $font-color-primary;
+      font-family: $font-family-primary;
+      font-size: $subtitle-fz;
+      letter-spacing: 3px;
+    }
+  }
+
+  .promo__button {
+    margin-top: 65px;
+    .button__link {
+      font-family: $font-family-primary;
+      letter-spacing: 2px;
+      text-decoration: none;
+      color: $font-color-primary;
+      border: 1px solid $font-color-primary;
+      padding: 15px;
+      transition: all 0.3s ease;
+      &:hover {
+        color: $color-hover;
+        border-color: $color-hover;
+      }
+    }
+  }
+
+// === promo styles === //
+
+//  === animation for title === //
+
+  .cssanimation, .cssanimation span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span {
+  display: inline-block
+}
+
+
+.hu__hu__ {
+  animation: hu__hu__ infinite 2s ease-in-out
+}
+@keyframes hu__hu__ {
+    50% { transform: translateY(30px) }
+}
+
+//  === animation for title === //
+
+// === advantages styles === //
+
+  .advantages--wrapper{
+    height: 100vh;
+    background-color: $bg-primary;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  .advatnages-inner--wrapper {
+    padding: 30px;
+    height: 50%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-secondary;
+  }
+
+  .advantages__icon {
+    margin-bottom: 15px;
+    .icon__first {
+      height: 50px;
+    }
+  }
+
+  .advantages__title {
+    margin-top: 25px;
+    text-align: center;
+    .title__text{
+    font-family: $font-family-primary;
+    font-size: $font-size-primary;
+  }
+  }
+
+  .advantages__subtitle {
+    margin-top: 35px;
+    text-align: center;
+    .subtitle__text{
+      font-family: $font-family-primary;
+      font-size: $font-size-primary;
+  }
+  }
+
+// === advantages styles === //
+
+// === preview styles === //
+
+  .preview--wrapper {
+    background-color: $bg-primary;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .preview__description {
+    text-align:center;
+    .description__text {
+      font-weight: 100;
+      letter-spacing: 5px;
+      color: $font-color-primary;
+      font-size: $title-fz;
+      font-family: $font-family-primary;
+    }
+  }
+
+// === preview styles === //
+
+// === examples styles === //
+
+  .examples--wrapper{
+    height: 100vh;
+    background-color: $bg-primary;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  .examples-inner--wrapper {
+    padding: 30px;
+    height: 50%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-secondary;
+  }
+
+  .examples__icon {
+    margin-bottom: 15px;
+    .icon__first {
+      height: 200px;
+      border-radius: 10%;
+    }
+  }
+
+  .examples__name {
+    margin-top: 25px;
+    text-align: center;
+    .name__text{
+    font-family: $font-family-primary;
+    font-size: $font-size-primary;
+  }
+  }
+
+  .examples__surname {
+    margin-top: 15px;
+    text-align: center;
+    .surname__text{
+    font-family: $font-family-primary;
+    font-size: $font-size-primary;
+  }
+  }
+
+  .examples__age {
+    margin-top: 15px;
+    text-align: center;
+    .age__number{
+    font-family: $font-family-primary;
+    font-size: $font-size-primary;
+  }
+  }
+
+  .examples__tel {
+    margin-top: 15px;
+    text-align: center;
+    .tel__number{
+    font-family: $font-family-primary;
+    font-size: $font-size-primary;
+  }
+  }
+
+  .examples__mail {
+    margin-top: 15px;
+    text-align: center;
+    .mail__address{
+    font-family: $font-family-primary;
+    font-size: $font-size-primary;
+  }
+  }
+
+// === examples styles === //  
+
+  // === main === //
+
+// === PhoneBook === //
+
+// === PhoneForm === //
+.form--wrapper {
+  background-color: $bg-primary;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  .form__label {
+    color: $bg-secondary;
+    font-family: $font-family-primary;
+    font-size: $font-size-primary;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .form__input {
+    width: 30%;
+    font-family: $font-family-primary;
+    font-size: $font-size-primary;
+  }
+  .form__button {
+    width: 30%;
+    margin-top: 25px;
+    height: 50px;
+    font-family: $font-family-primary;
+    font-size: $font-size-primary;
+  }
+}
+
+// === PhoneList === //
+
+.list--wrapper{
+  min-height: 100vh;
+  background-color: $bg-primary;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;  
+  align-items: center;
+
+}
+
+.list-inner--wrapper {
+  margin: 20px;
+  padding: 30px;
+  height: 50%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $bg-secondary;
+  
+}
+
+.list__icon {
+  margin-bottom: 15px;
+  .icon__first {
+    height: 200px;
+    border-radius: 10%;
+  }
+}
+
+.list__name {
+  margin-top: 25px;
+  text-align: center;
+  .name__text{
+  font-family: $font-family-primary;
+  font-size: $font-size-primary;
+}
+}
+
+.list__surname {
+  margin-top: 15px;
+  text-align: center;
+  .surname__text{
+  font-family: $font-family-primary;
+  font-size: $font-size-primary;
+}
+}
+
+.list__age {
+  margin-top: 15px;
+  text-align: center;
+  .age__number{
+  font-family: $font-family-primary;
+  font-size: $font-size-primary;
+}
+}
+
+.list__tel {
+  margin-top: 15px;
+  text-align: center;
+  .tel__number{
+  font-family: $font-family-primary;
+  font-size: $font-size-primary;
+}
+}
+
+.list__mail {
+  margin-top: 15px;
+  text-align: center;
+  .mail__address{
+  font-family: $font-family-primary;
+  font-size: $font-size-primary;
+}
+}
+
+.list__button {
+  margin-top: 30px;
+  width: 100%;
+  font-family: $font-family-primary;
+}
+
+// === PhoneList === //
+
+// ===search filter === //
+
+.search--filter {
+  background: $bg-primary;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__input {
+    width: 30%;
+    font-family: $font-family-primary;
+    font-size: $font-size-primary;
+    
+}
